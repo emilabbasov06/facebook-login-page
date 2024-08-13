@@ -11,10 +11,14 @@
     --main-color: #0866FF;
     --paragraph-color: #1C1E21;
     --link-color: #087EFF;
+    --green: #42B72A;
+    --form-button-font-size: 1.3rem;
+    --input-font-size: 1rem;
 }
 
 body {
     font-family: 'Nunito', sans-serif;
+    background-color: var(--bg-color);
 }
 
 .container {
@@ -33,7 +37,7 @@ body {
 }
 
 .main, .form-container {
-    width: 45%;
+    width: 40%;
 }
 
 .main h1 {
@@ -43,6 +47,99 @@ body {
 }
 
 .main p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--paragraph-color);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    box-shadow: 3px 3px 10px lightgray;
+    border: none;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 1rem;
+    font-size: var(--input-font-size);
+    border: 0.2px solid lightgray;
+    border-radius: 10px;
+}
+
+hr {
+    width: 100%;
+}
+
+input:nth-child(3) {
+    background-color: var(--main-color);
+    color: white;
+    font-size: var(--form-button-font-size);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7rem;
+}
+
+input:nth-child(3):hover {
+    background-color: #0867ffce;
+}
+
+.create-account {
+    background-color: var(--green);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:nth-child(2) {
+    font-size: small;
+    text-decoration: none;
+}
+
+a:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+.create-account:hover {
+    background-color: #39a323;
+}
+
+.create-page {
+    font-size: small;
+}
+
+.create-page a {
+    color: #000000;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.create-page a:hover {
+    text-decoration: underline;
 }
